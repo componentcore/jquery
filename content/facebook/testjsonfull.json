@@ -1,0 +1,770 @@
+/**/ jQuery111302333243862196106_1471571891495({
+   "data": [
+      {
+         "id": "291472227559838_1306396562734061",
+         "from": {
+            "name": "Glenwood Park, Atlanta Georgia",
+            "category": "Public Places",
+            "category_list": [
+               {
+                  "id": "115090141929327",
+                  "name": "Park"
+               },
+               {
+                  "id": "206555552714503",
+                  "name": "Neighborhood"
+               }
+            ],
+            "id": "291472227559838"
+         },
+         "message": "43,000 people live within 2 miles of the new Glenwood Place Kroger. As a first-mover, Kroger received federal tax cuts intended to end food deserts by placing stores in low income communities. A Sprouts and Cinebistro are being developed across the freeway at 905 Memorial by the same developer.",
+         "picture": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQB_7lFpGdbsKb70&w=130&h=130&url=https\u00253A\u00252F\u00252Fnextcity.org\u00252Fimages\u00252Fdaily\u00252F_resized\u00252FRibbon_cutting.jpg&cfs=1&sx=170&sy=0&sw=800&sh=800",
+         "link": "https://nextcity.org/daily/entry/new-atlanta-grocery-challenges-equitable-development",
+         "name": "New Atlanta Grocery Highlights Challenges in Equitable Development",
+         "caption": "nextcity.org",
+         "description": "\"The question is not how did the Kroger get there, but who is the Kroger for.\"",
+         "icon": "https://www.facebook.com/images/icons/post.gif",
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "type": "link",
+         "status_type": "shared_story",
+         "created_time": "2016-08-14T13:06:15+0000",
+         "updated_time": "2016-08-14T13:06:15+0000",
+         "shares": {
+            "count": 1
+         },
+         "is_hidden": false,
+         "is_expired": false,
+         "likes": {
+            "data": [
+               {
+                  "id": "10153950887068473",
+                  "name": "Sam Beresford"
+               },
+               {
+                  "id": "10209267734546606",
+                  "name": "Kay Clark"
+               },
+               {
+                  "id": "10153698507962885",
+                  "name": "Dar Dar Dearborn"
+               },
+               {
+                  "id": "10101108067400936",
+                  "name": "Julia Nolf"
+               },
+               {
+                  "id": "10208637440106851",
+                  "name": "Mary Branche"
+               },
+               {
+                  "id": "1001048980016419",
+                  "name": "Lina Barros"
+               },
+               {
+                  "id": "10100988494865636",
+                  "name": "Akeem Etheridge"
+               }
+            ],
+            "paging": {
+               "cursors": {
+                  "before": "MTAxNTM5NTA4ODcwNjg0NzMZD",
+                  "after": "MTAxMDA5ODg0OTQ4NjU2MzYZD"
+               }
+            }
+         }
+      },
+      {
+         "id": "291472227559838_1306079502765767",
+         "from": {
+            "name": "Glenwood Park, Atlanta Georgia",
+            "category": "Public Places",
+            "category_list": [
+               {
+                  "id": "115090141929327",
+                  "name": "Park"
+               },
+               {
+                  "id": "206555552714503",
+                  "name": "Neighborhood"
+               }
+            ],
+            "id": "291472227559838"
+         },
+         "story": "Glenwood Park, Atlanta Georgia shared a link.",
+         "story_tags": {
+            "0": [
+               {
+                  "id": "291472227559838",
+                  "name": "Glenwood Park, Atlanta Georgia",
+                  "type": "page",
+                  "offset": 0,
+                  "length": 30
+               }
+            ]
+         },
+         "picture": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQAwsOoW-Fhn_C3r&w=130&h=130&url=https\u00253A\u00252F\u00252Fcmgajcradiotvtalk.files.wordpress.com\u00252F2016\u00252F07\u00252Fcynthia-bailey-townhome.jpg&cfs=1",
+         "link": "http://radiotvtalk.blog.ajc.com/2016/08/11/cynthia-baileys-glenwood-park-home-nearly-sold/",
+         "name": "Cynthia Bailey\u2019s Glenwood Park home nearly sold | Radio and TV Talk",
+         "caption": "radiotvtalk.blog.ajc.com",
+         "description": "\"Real Housewives of Atlanta\" cast member Cynthia Bailey, who is separated from her husband Peter Thomas, is close to selling her Glenwood Park townhome which went on sale a month ago. It was listed for sale July 14. A buyer was accepted just 11 days later. According to zillow.com, the house is now \"...",
+         "icon": "https://www.facebook.com/images/icons/post.gif",
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "type": "link",
+         "status_type": "shared_story",
+         "created_time": "2016-08-14T05:10:16+0000",
+         "updated_time": "2016-08-14T05:10:16+0000",
+         "shares": {
+            "count": 1
+         },
+         "is_hidden": false,
+         "is_expired": false
+      },
+      {
+         "id": "291472227559838_1265540426819675",
+         "from": {
+            "name": "Chris Lewis",
+            "id": "10206338705737573"
+         },
+         "message": "Garage sale today 12:30-5\n1174 Village ct. 30316\nDial c. Lewis from the call box to be buzzed in.\nPatio table, file cabinets, random stuff. Pics to come!",
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "type": "status",
+         "status_type": "wall_post",
+         "created_time": "2016-07-02T14:40:59+0000",
+         "updated_time": "2016-07-02T14:40:59+0000",
+         "is_hidden": false,
+         "is_expired": false
+      },
+      {
+         "id": "291472227559838_1222772227763162",
+         "from": {
+            "name": "Jennifer Leslie 11Alive",
+            "category": "Journalist",
+            "id": "160408264068600"
+         },
+         "message": "When they weren't busy directing a blockbuster last summer, where in Atlanta did the The Russo Brothers live and eat? Here's part of my one-on-one with co-director Anthony Russo. Captain America Marvel 11Alive #CaptainAmericaCivilWar #TeamCap #TeamIronMan Antico-Pizza Napoletana Ammazza Edgewood Atlanta BeltLine Glenwood Park, Atlanta Georgia Inman Park | Atlanta, GA Allied Atlanta",
+         "message_tags": {
+            "85": [
+               {
+                  "id": "739779486157986",
+                  "name": "The Russo Brothers",
+                  "type": "page",
+                  "offset": 85,
+                  "length": 18
+               }
+            ],
+            "179": [
+               {
+                  "id": "122352024462380",
+                  "name": "Captain America",
+                  "type": "page",
+                  "offset": 179,
+                  "length": 15
+               }
+            ],
+            "195": [
+               {
+                  "id": "6883542487",
+                  "name": "Marvel",
+                  "type": "page",
+                  "offset": 195,
+                  "length": 6
+               }
+            ],
+            "202": [
+               {
+                  "id": "114256800495",
+                  "name": "11Alive",
+                  "type": "page",
+                  "offset": 202,
+                  "length": 7
+               }
+            ],
+            "256": [
+               {
+                  "id": "111540785551972",
+                  "name": "Antico-Pizza Napoletana",
+                  "type": "page",
+                  "offset": 256,
+                  "length": 23
+               }
+            ],
+            "280": [
+               {
+                  "id": "358964764147424",
+                  "name": "Ammazza Edgewood",
+                  "type": "page",
+                  "offset": 280,
+                  "length": 16
+               }
+            ],
+            "297": [
+               {
+                  "id": "351222430982",
+                  "name": "Atlanta BeltLine",
+                  "type": "page",
+                  "offset": 297,
+                  "length": 16
+               }
+            ],
+            "314": [
+               {
+                  "id": "291472227559838",
+                  "name": "Glenwood Park, Atlanta Georgia",
+                  "type": "page",
+                  "offset": 314,
+                  "length": 30
+               }
+            ],
+            "345": [
+               {
+                  "id": "149744365094513",
+                  "name": "Inman Park |  Atlanta, GA",
+                  "type": "page",
+                  "offset": 345,
+                  "length": 24
+               }
+            ],
+            "370": [
+               {
+                  "id": "423265160332",
+                  "name": "Allied Atlanta",
+                  "type": "page",
+                  "offset": 370,
+                  "length": 14
+               }
+            ]
+         },
+         "picture": "https://fbcdn-vthumb-a.akamaihd.net/hvthumb-ak-xfa1/v/t15.0-10/s130x130/11188943_927848177324601_878661107_n.jpg?oh=434ba916d89d6a4d85be71598bf86da3&oe=58138D94&__gda__=1482035432_2a08220ec1dda6faacdf7decb361268e",
+         "link": "https://www.facebook.com/11AliveJenniferLeslie/videos/927847187324700/",
+         "source": "https://video.xx.fbcdn.net/v/t42.1790-2/13187470_1031029110315264_1359103063_n.mp4?efg=eyJybHIiOjMwMCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0\u00253D&rl=300&vabr=89&oh=63d4f5bba8228ff0189e92960fa88ff8&oe=57B84CBD",
+         "properties": [
+            {
+               "name": "Length",
+               "text": "00:32"
+            }
+         ],
+         "icon": "https://www.facebook.com/images/icons/video.gif",
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "type": "video",
+         "status_type": "added_video",
+         "object_id": "927847187324700",
+         "created_time": "2016-05-05T10:03:50+0000",
+         "updated_time": "2016-05-05T10:51:28+0000",
+         "is_hidden": false,
+         "is_expired": false,
+         "likes": {
+            "data": [
+               {
+                  "id": "1766064477005238",
+                  "name": "Roberts IR"
+               },
+               {
+                  "id": "1013669938752287",
+                  "name": "Margaretha Falcau"
+               },
+               {
+                  "id": "1224777210906759",
+                  "name": "Yan Damphousse"
+               },
+               {
+                  "id": "10208781209759264",
+                  "name": "Jennifer Lambert"
+               },
+               {
+                  "id": "175475219135509",
+                  "name": "Curran Public Relations"
+               },
+               {
+                  "id": "10201855491106518",
+                  "name": "J Max Davis"
+               },
+               {
+                  "id": "10154455759997188",
+                  "name": "Cassie Owens"
+               },
+               {
+                  "id": "1233936786657454",
+                  "name": "Amy Kim"
+               },
+               {
+                  "id": "10210453671961761",
+                  "name": "Seanna Burns Stephenson"
+               },
+               {
+                  "id": "569534706553025",
+                  "name": "Paul E Meredith"
+               },
+               {
+                  "id": "114256800495",
+                  "name": "11Alive"
+               },
+               {
+                  "id": "10210051802595006",
+                  "name": "Kay Flowers Johnson"
+               },
+               {
+                  "id": "10206406225703136",
+                  "name": "Tricia Tholen Gephardt"
+               }
+            ],
+            "paging": {
+               "cursors": {
+                  "before": "MTc2NjA2NDQ3NzAwNTIzOAZDZD",
+                  "after": "MTAyMDY0MDYyMjU3MDMxMzYZD"
+               }
+            }
+         }
+      },
+      {
+         "id": "291472227559838_1219202644786787",
+         "from": {
+            "name": "Glenwood Park, Atlanta Georgia",
+            "category": "Public Places",
+            "category_list": [
+               {
+                  "id": "115090141929327",
+                  "name": "Park"
+               },
+               {
+                  "id": "206555552714503",
+                  "name": "Neighborhood"
+               }
+            ],
+            "id": "291472227559838"
+         },
+         "message": "Casual eats to enjoy here or take home, inspired by the season!",
+         "picture": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQAIOFH_VLPRRMec&w=130&h=130&url=fbstaging\u00253A\u00252F\u00252Fgraph.facebook.com\u00252Fstaging_resources\u00252FMDExMjE5MjAwNDkxNDUzNjY5Ojk5MDQ4NjI1NQ\u00253D\u00253D&cfs=1",
+         "link": "http://glenwoodpark.com/josephco",
+         "name": "Joseph & Co. | Glenwood Park",
+         "caption": "glenwoodpark.com",
+         "description": "Curated gifts of regional and gourmet items, bakery and cafe featuring Octane coffee and Honeysuckle gelato. Meals, desserts and a selection of sweet and savory baked items made in house.",
+         "icon": "https://www.facebook.com/images/icons/post.gif",
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "type": "link",
+         "status_type": "shared_story",
+         "created_time": "2016-04-30T10:54:08+0000",
+         "updated_time": "2016-04-30T23:14:40+0000",
+         "is_hidden": false,
+         "is_expired": false,
+         "likes": {
+            "data": [
+               {
+                  "id": "1434757503206273",
+                  "name": "Mena Nowlin"
+               },
+               {
+                  "id": "1011401888946815",
+                  "name": "Carla AndJoe"
+               }
+            ],
+            "paging": {
+               "cursors": {
+                  "before": "MTQzNDc1NzUwMzIwNjI3MwZDZD",
+                  "after": "MTAxMTQwMTg4ODk0NjgxNQZDZD"
+               }
+            }
+         },
+         "comments": {
+            "data": [
+               {
+                  "created_time": "2016-04-30T23:14:40+0000",
+                  "from": {
+                     "name": "Carla AndJoe",
+                     "id": "1011401888946815"
+                  },
+                  "message": "We love this place!  Joseph is awesome, great customer service! A true asset to our community \u2764",
+                  "can_remove": false,
+                  "like_count": 0,
+                  "user_likes": false,
+                  "id": "1219202644786787_1219588294748222"
+               }
+            ],
+            "paging": {
+               "cursors": {
+                  "before": "MQZDZD",
+                  "after": "MQZDZD"
+               }
+            }
+         }
+      },
+      {
+         "id": "291472227559838_1114140048626381",
+         "from": {
+            "name": "Glenwood Park, Atlanta Georgia",
+            "category": "Public Places",
+            "category_list": [
+               {
+                  "id": "115090141929327",
+                  "name": "Park"
+               },
+               {
+                  "id": "206555552714503",
+                  "name": "Neighborhood"
+               }
+            ],
+            "id": "291472227559838"
+         },
+         "message": "Tasting Tuesday is here! Extra small plates without the extra cost. Seeya soon.",
+         "story": "Glenwood Park, Atlanta Georgia shared The Shed at Glenwood's post.",
+         "story_tags": {
+            "0": [
+               {
+                  "id": "291472227559838",
+                  "name": "Glenwood Park, Atlanta Georgia",
+                  "type": "page",
+                  "offset": 0,
+                  "length": 30
+               }
+            ],
+            "38": [
+               {
+                  "id": "40661162428",
+                  "name": "The Shed at Glenwood",
+                  "type": "page",
+                  "offset": 38,
+                  "length": 20
+               }
+            ]
+         },
+         "picture": "https://fbcdn-photos-a-a.akamaihd.net/hphotos-ak-xal1/v/t1.0-0/p130x130/12294862_10153704470282429_8724541284512855579_n.jpg?oh=1f7e87faa5eb5b79fa288bed132dfda6&oe=585C7293&__gda__=1481605455_a3fb47c375d74fdae8764f92f4e33b4c",
+         "link": "https://www.facebook.com/40661162428/photos/a.10150350597187429.397859.40661162428/10153704470282429/?type=3",
+         "name": "The Shed at Glenwood",
+         "description": "Tasting Tuesday is here! Extra small plates without the extra cost. Seeya soon.",
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "type": "photo",
+         "status_type": "shared_story",
+         "object_id": "10153704470282429",
+         "created_time": "2015-11-28T17:32:58+0000",
+         "updated_time": "2015-11-28T17:40:22+0000",
+         "is_hidden": false,
+         "is_expired": false,
+         "likes": {
+            "data": [
+               {
+                  "id": "1271493119551147",
+                  "name": "Darrell Harps"
+               },
+               {
+                  "id": "10207197808519958",
+                  "name": "Jessica Nicole"
+               }
+            ],
+            "paging": {
+               "cursors": {
+                  "before": "MTI3MTQ5MzExOTU1MTE0NwZDZD",
+                  "after": "MTAyMDcxOTc4MDg1MTk5NTgZD"
+               }
+            }
+         }
+      },
+      {
+         "id": "291472227559838_10153360119914613",
+         "from": {
+            "name": "Barbara Smith",
+            "id": "10153360231969613"
+         },
+         "message": "Long shot, but I lost one of these earrings during the Halloween parade. If anyone happened to pick it up, I would love to have it back!",
+         "picture": "https://fbcdn-photos-a-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-0/s130x130/12193601_10153360119914613_7378190496804160731_n.jpg?oh=5efb8d5c2105a89143138cafc594a010&oe=58178916&__gda__=1477531821_6a0210370097ce57830855bdbdc849ad",
+         "link": "https://www.facebook.com/photo.php?fbid=10153360119914613&set=o.291472227559838&type=3",
+         "icon": "https://www.facebook.com/images/icons/photo.gif",
+         "actions": [
+            {
+               "name": "See Friendship",
+               "link": "https://m.facebook.com/friendship/679874612/291472227559838/"
+            }
+         ],
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "type": "photo",
+         "status_type": "added_photos",
+         "object_id": "10153360119914613",
+         "created_time": "2015-11-01T15:19:23+0000",
+         "updated_time": "2015-11-01T15:19:23+0000",
+         "is_hidden": false,
+         "is_expired": false
+      },
+      {
+         "id": "291472227559838_10205976487513197",
+         "from": {
+            "name": "Patricia Kennedy",
+            "id": "10206252693578176"
+         },
+         "message": "Hi everyone I'm a barber at 71 barbershop I just wanted to introduce myself and our shop we're new to Glenwood Park and located in the bottom retail area of the Enso apartments next to the wine shop. We do all types of hair, hot shaves and other services check out our website www.71barbershop.com and we are of course the Glenwood/EVA location or just stop by and say hi \ud83d\ude03",
+         "story": "Patricia Kennedy added a new photo to Glenwood Park, Atlanta Georgia's timeline \u2014 at 71 Barber Shop Glenwood.",
+         "story_tags": {
+            "0": [
+               {
+                  "id": "10206252693578176",
+                  "name": "Patricia Kennedy",
+                  "type": "user",
+                  "offset": 0,
+                  "length": 16
+               }
+            ],
+            "38": [
+               {
+                  "id": "291472227559838",
+                  "name": "Glenwood Park, Atlanta Georgia",
+                  "type": "page",
+                  "offset": 38,
+                  "length": 30
+               }
+            ],
+            "85": [
+               {
+                  "id": "1579738562298621",
+                  "name": "71 Barber Shop Glenwood",
+                  "type": "page",
+                  "offset": 85,
+                  "length": 23
+               }
+            ]
+         },
+         "picture": "https://fbcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-0/s130x130/11069687_10205976487513197_7739347765647681511_n.jpg?oh=8da5560c27e578e57df799dc1df3f735&oe=58508F94&__gda__=1481102689_c141b14860efd2820c17deeae04790f2",
+         "link": "https://www.facebook.com/photo.php?fbid=10205976487513197&set=o.291472227559838&type=3",
+         "icon": "https://www.facebook.com/images/icons/photo.gif",
+         "actions": [
+            {
+               "name": "See Friendship",
+               "link": "https://m.facebook.com/friendship/1290562487/291472227559838/"
+            }
+         ],
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "place": {
+            "id": "1579738562298621",
+            "name": "71 Barber Shop Glenwood",
+            "location": {
+               "city": "Atlanta",
+               "country": "United States",
+               "latitude": 33.74093549305,
+               "longitude": -84.358156100363,
+               "state": "GA",
+               "street": "880 Glenwood Ave. SE. Suite B Atlanta, GA 30316",
+               "zip": "30316"
+            }
+         },
+         "type": "photo",
+         "status_type": "added_photos",
+         "object_id": "10205976487513197",
+         "created_time": "2015-03-24T20:55:36+0000",
+         "updated_time": "2015-03-24T20:55:36+0000",
+         "is_hidden": false,
+         "is_expired": false,
+         "likes": {
+            "data": [
+               {
+                  "id": "10104848614459608",
+                  "name": "Toya Elise"
+               }
+            ],
+            "paging": {
+               "cursors": {
+                  "before": "MTAxMDQ4NDg2MTQ0NTk2MDgZD",
+                  "after": "MTAxMDQ4NDg2MTQ0NTk2MDgZD"
+               }
+            }
+         }
+      },
+      {
+         "id": "291472227559838_947714278602293",
+         "from": {
+            "name": "Glenwood Park, Atlanta Georgia",
+            "category": "Public Places",
+            "category_list": [
+               {
+                  "id": "115090141929327",
+                  "name": "Park"
+               },
+               {
+                  "id": "206555552714503",
+                  "name": "Neighborhood"
+               }
+            ],
+            "id": "291472227559838"
+         },
+         "message": "$125-million \"Atlanta Dairies\" project will include retail, commercial, office and residential pieces with an \"Americana and entertainment focus.\"",
+         "picture": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQArLXxiIG523SRv&w=130&h=130&url=http\u00253A\u00252F\u00252Fatlanta.curbed.com\u00252Fuploads\u00252FPacesAtlantaDairies-thumb.jpg&cfs=1",
+         "link": "http://atlanta.curbed.com/archives/2015/02/19/first-look-memorial-drives-answer-to-krog-street-market.php",
+         "name": "First Look: Memorial Drive's Answer to Krog Street Market",
+         "caption": "atlanta.curbed.com",
+         "description": "Paces Properties' plans to resurrect the decrepit Atlanta Dairies complex on Memorial Drive are real \u2014 and they have the potential to be spectacular. The 11-acre site at 777...",
+         "icon": "https://www.facebook.com/images/icons/post.gif",
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "type": "link",
+         "status_type": "shared_story",
+         "created_time": "2015-02-21T14:12:21+0000",
+         "updated_time": "2015-02-21T14:12:21+0000",
+         "shares": {
+            "count": 3
+         },
+         "is_hidden": false,
+         "is_expired": false,
+         "likes": {
+            "data": [
+               {
+                  "id": "1409278164",
+                  "name": "Loren Heyns"
+               },
+               {
+                  "id": "10210670805915590",
+                  "name": "Gina Taylor Tharayil"
+               },
+               {
+                  "id": "1011401888946815",
+                  "name": "Carla AndJoe"
+               },
+               {
+                  "id": "10155446396538532",
+                  "name": "Dean Harrelson"
+               }
+            ],
+            "paging": {
+               "cursors": {
+                  "before": "MTQwOTI3ODE2NAZDZD",
+                  "after": "MTAxNTU0NDYzOTY1Mzg1MzIZD"
+               }
+            }
+         }
+      },
+      {
+         "id": "291472227559838_936681339705587",
+         "from": {
+            "name": "Glenwood Park, Atlanta Georgia",
+            "category": "Public Places",
+            "category_list": [
+               {
+                  "id": "115090141929327",
+                  "name": "Park"
+               },
+               {
+                  "id": "206555552714503",
+                  "name": "Neighborhood"
+               }
+            ],
+            "id": "291472227559838"
+         },
+         "message": "Why visit Rh\u00f4ne when you can stay close to home.",
+         "story": "Glenwood Park, Atlanta Georgia shared The Shed at Glenwood's event.",
+         "story_tags": {
+            "0": [
+               {
+                  "id": "291472227559838",
+                  "name": "Glenwood Park, Atlanta Georgia",
+                  "type": "page",
+                  "offset": 0,
+                  "length": 30
+               }
+            ],
+            "38": [
+               {
+                  "id": "40661162428",
+                  "name": "The Shed at Glenwood",
+                  "type": "page",
+                  "offset": 38,
+                  "length": 20
+               }
+            ],
+            "61": [
+               {
+                  "id": "849998361713677",
+                  "name": "Rhone Wine Class",
+                  "type": "event",
+                  "offset": 61,
+                  "length": 5
+               }
+            ]
+         },
+         "picture": "https://fbcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-0/c98.0.130.130/p130x130/10943905_10153042530412429_2499538653705375882_n.jpg?oh=a89b3699f7bda08f23cbcf2dedd2259b&oe=5818C0AF&__gda__=1477529745_652084b99a38769fb6966facfe8d2b74",
+         "link": "https://www.facebook.com/events/849998361713677/",
+         "name": "Rhone Wine Class",
+         "caption": "Rhone Wine Class",
+         "description": "Our bi-monthly wine class explores the beautiful diversity of the Rhone Valley with our March topic: \"Spring in Bloom; Floral Rhone Varietals\". Join us as we pair 8 of the 22 or so recognized Rhone varietals with Chef Todd Richards' James Beard-nominated cuisine. We will be tasting 4 whites and 4 reds, and as always you will not want to miss it! You'll have fun, learn about the Rhone Valley and maybe even win a little something to take home with you!\n\nCost is $55 per person, reservations recommended.\nCall us now and save your spot!",
+         "icon": "https://www.facebook.com/images/icons/event.gif",
+         "privacy": {
+            "value": "",
+            "description": "",
+            "friends": "",
+            "allow": "",
+            "deny": ""
+         },
+         "type": "event",
+         "status_type": "shared_story",
+         "object_id": "849998361713677",
+         "created_time": "2015-02-04T01:41:18+0000",
+         "updated_time": "2015-02-04T01:41:18+0000",
+         "is_hidden": false,
+         "is_expired": false,
+         "likes": {
+            "data": [
+               {
+                  "id": "10207069096467885",
+                  "name": "Todd Martin"
+               }
+            ],
+            "paging": {
+               "cursors": {
+                  "before": "MTAyMDcwNjkwOTY0Njc4ODUZD",
+                  "after": "MTAyMDcwNjkwOTY0Njc4ODUZD"
+               }
+            }
+         }
+      }
+   ],
+   "paging": {
+      "previous": "https://graph.facebook.com/v2.1/291472227559838/feed?limit=10&since=1471179975&access_token=117370968285365|5XkqBE8fUp29ZaTRAMTmAAfCFvk&__paging_token=enc_AdDPGCivYsY1MvACqY1S5YAXasCdAp6zSUtZAKiINSfV5BbYIZAS1FXCTsGZBuD4nkHRpNCpgBNahutuSdoKuW6n7EawpXoX0HKhC5axUiMIkFUsAZDZD&__previous=1",
+      "next": "https://graph.facebook.com/v2.1/291472227559838/feed?limit=10&access_token=117370968285365|5XkqBE8fUp29ZaTRAMTmAAfCFvk&until=1423014078&__paging_token=enc_AdA5IuFUf6FVV0UZBZC0OIWbfZBJV2MF6HfRZC7WHC2wFoYy3CDKsb6c4vpUj8ugDAHA6ds1Tj57glRLdnnL1FZBZAbGsI64IHbmcBEUX6YAfsgtHhpwZDZD"
+   }
+});

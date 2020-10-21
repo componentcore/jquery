@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>DreamStudio Gallery - Demo</title>
+<link type="text/css" href="../../jquery/gallery/slideshow-1.1.css" rel="stylesheet" /> 
+<script type="text/javascript" src="../../jquery/jquery.min.js"></script>  
+<script type="text/javascript" src="../../jquery/gallery/slideshow-1.1.js"></script>  
+
+<script type="text/javascript" language="javascript">
+	
+	showPlayPause = true;
+	jsonLink = "/location/gallery/imagefeed.aspx?fl=750&w=files/465oakland/home";
+	if (location.host == 'localhost')
+   	{
+   		//alert('localhost');
+    }
+	//jsonLink = "/location/gallery/imagefeed.aspx?fl=600&w=Files/District1Atlanta/2011/StantonPark";
+	showSlideNumbers = true;
+	numberArrows = false;
+	autoStart = true;
+	loadThumbnails = true;
+	$(document).ready(function () {
+		loadGallery();
+		initiateSlideshow();
+	});
+</script>
+<style type="text/css">
+	#slideshow-holderX { width:600px; }
+</style>
+
+</head>
+
+<body>
+
+Moved into /base<br><br>
+
+<!-- Gallery -->
+<div id="gallery-container">
+<!-- CONTROLS -->
+	<div style="position: absolute; z-index: 8000; left: 8px; top: 12px; width: 300px;">
+		<div id="slide-number-holder">
+			<div id="pauseResume"><!-- prevents nbsp --></div>
+		</div>
+	</div>
+<!-- END CONTROLS -->	<div id="slideshow-holder">
+		<div class="arrow-back" id="prev" onclick="pauseShow();previousSlide();return;" style="position: absolute; right: 31px; top: 13px; z-index: 9000; margin-left: 6px; margin-right: 2px;">
+			<img alt="" src="../../jquery/gallery/icons/circle-back.png" /></div>
+		<div class="arrow-next" id="next" onclick="pauseShow();nextSlide();return;" style="position: absolute; right: 7px; top: 13px; z-index: 9000;">
+			<img alt="" src="../../jquery/gallery/icons/circle-next.png" /></div>
+		<div style="position: absolute; z-index: 2; height: 150px; width: 100%; background-image: url(../../core/elements/bkgd/fade-from-333-150.png);">
+			&nbsp;</div>
+		<div id="slide-nav">
+			&nbsp;</div>
+		<div class="clearfix" id="slide-container">
+			<img alt="Loading image" src="../../core/elements/icons/loading.gif" /></div>
+	</div>
+</div>
+<div id="thumb-holder" class="clearfix"><img alt="Loading images" src="../../core/elements/icons/loading.gif" /></div>
+
+<div id="widget">&nbsp;</div>
+<!-- End Gallery -->
+</body>
+</html>

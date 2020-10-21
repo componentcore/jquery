@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Smart API - Map, Calendar and Gallery Widget</title>
+    <!--
+    <link rel="stylesheet" type="text/css" href="css/foundation.css" />
+    -->
+    <link rel="stylesheet" type="text/css" href="/base/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="/base/css/smartGallery.1.0.css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script type="application/javascript">
+        window.jQuery || document.write(unescape('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))
+    </script>
+    <script type="text/javascript">
+        window.BrowserUtil || document.write(unescape('%3Cscript src="/core/elements/javascript/BrowserUtil.js" type="text/javascript"%3E%3C/script%3E'))
+    </script>
+    <script src="/base/js/smartGallery.1.0.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+        showPlayPause = true;
+        // To eliminate by moving into smartWidget.
+        jsonLink = "/location/gallery/imagefeed.aspx?fl=600&w=Files/District1Atlanta/2011/StantonPark";
+        showSlideNumbers = true;
+        numberArrows = false;
+        autoStart = true;
+        loadThumbnails = true;
+        $(document).ready(function () {
+            loadGallery();
+            initiateSlideshow();
+        });
+    </script>
+</head>
+<body>
+<div id="content">
+
+    Prior Gallery - Remove when smartWidget gallery is complete.<br>
+    <!-- Gallery -->
+    <div id="gallery-container">
+    <!-- CONTROLS -->
+        <div style="position: absolute; z-index: 8000; left: 8px; top: 12px; width: 300px;">
+            <div id="slide-number-holder">
+                <div id="pauseResume"><!-- prevents nbsp --></div>
+            </div>
+        </div>
+    <!-- END CONTROLS -->   
+        <div id="slideshow-holder">
+                <div class="arrow-back" id="prev" onclick="pauseShow();previousSlide();return;" style="position: absolute; right: 31px; top: 13px; z-index: 9000; margin-left: 6px; margin-right: 2px;">
+                    <img alt="" src="/base/img/icons/circle-back.png" /></div>
+                <div class="arrow-next" id="next" onclick="pauseShow();nextSlide();return;" style="position: absolute; right: 7px; top: 13px; z-index: 9000;">
+                    <img alt="" src="/base/img/icons/circle-next.png" /></div>
+                <div style="position: absolute; z-index: 2; height: 150px; width: 100%; background-image: url(../../core/elements/bkgd/fade-from-333-150.png);">
+                    &nbsp;</div>
+                <div id="slide-nav">
+                    &nbsp;</div>
+                <div class="clearfix" id="slide-container">
+                    <img alt="Loading image" src="../../core/elements/icons/loading.gif" /></div>
+        </div>
+    </div>
+    <div id="thumb-holder" class="clearfix"><img alt="Loading images" src="../../core/elements/icons/loading.gif" /></div>
+
+    <div id="widget">&nbsp;</div>
+    <!-- End Gallery -->
+</div>
+</body>
+</html>

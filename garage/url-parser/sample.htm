@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="/jquery/plugins/url-parser/jquery.url.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		alert($.url('http://allmarkedup.com?sky=blue&grass=green').param('sky'));
+		alert($.url().param('sky'));
+		alert($.url().fparam('sky')); // After # hash
+	});
+</script>
+</head>
+
+<body>
+
+Use fparam for # hash parameters.
+
+<a href="https://github.com/allmarkedup/jQuery-URL-Parser">Documentation</a>
+
+</body>
+</html>

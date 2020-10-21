@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Posts</title>
+    <!-- for button class -->
+    <link type="text/css" href="../../../core/elements/styles/default.css" rel="stylesheet" />
+    <link type="text/css" href="../../css/base.css" rel="stylesheet" />
+    <link type="text/css" href="css/posts.css" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../../js/browserutil.js"></script>
+    <style type="text/css">
+        h1, h2
+        {
+            font-family: calibri, helvetica, arial, sans-serif;
+        }
+        a
+        {
+            color: #0E7FC7;
+        }
+        .fbExpanded
+        {
+            display: none;
+        }
+        .fbCondensed
+        {
+            display: block;
+        }
+        body
+        {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body style="margin: 0px">
+    <div class='fbDetails button button-grey button-sm' style='float: right; margin: 10px 10px 0px 0px'>
+        Expand</div>
+    <div class='fbShrink button button-grey button-sm' style='display: none; float: right;
+        margin: 10px 10px 0px 0px'>
+        Shrink</div>
+    <h2>Facebook Feed Reader</h2>
+    <h3 style="margin:0px">Site plugin by <a href="http://dreamstudio.com" target="dreamstudio">DreamStudio</a></h3>
+    <br>
+
+        <!-- (FQL) -->
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            fbToken = '117370968285365|5XkqBE8fUp29ZaTRAMTmAAfCFvk'; // Access token from Neighborhood App.
+            //showComments = false;
+            fbLimit = 6;
+            fbOffset = 0;
+            fbShowControls = true;
+            includePublicFeed = true;
+
+            fbFolder = 'GrantParkGPNA';
+            fbAdminID = "129055803796451"; // gpna
+
+            //fbFolder = 'GlenwoodParkAtlanta';
+            //fbAdminID = '291472227559838';
+            
+            //fbFolder = 'southeast.atlanta';
+            //fbAdminID = '1155132781171052'; // Facebook Page ID
+
+            //fbFolder = 'Atlanta-City-Council-Member-Carla-Smith-285182178269780';
+            //fbAdminID = ''; 
+
+            // Parks
+//            showComments = false;
+//            includePublicFeed = false;
+//            fbShowControls = true; // show the More button
+//            fbFolder = "georgiastateparks";
+//            fbAdminID = "220165609304";
+//            // End Parks
+
+            fbInit();
+            fbFetch();
+        });
+    </script>
+
+    <div class="newsfeed">
+    </div>
+    <!--
+    <div id="loadMoreFbFeeds" class=' button button-grey button-sm' style='float:right; margin:10px 10px 0px 0px'>10 More</div>
+    <div class='fbShowPublicPosts button button-grey button-sm' style='float:right; margin:10px 10px 0px 0px'>Show Public Posts</div>
+    <div class='fbHidePublicPosts button button-grey button-sm' style='display:none; float:right; margin:10px 10px 0px 0px'>Hide Public Posts</div>
+    -->
+
+    <br />
+
+    <h3>Set Up Notes:</h3>
+    <p>
+        Set the fbAdminID variable to the admin actor_id for the site. This allows the code
+        to know which posts are public posts and which are admin posts. To get the actor_id,
+        do the following:
+
+        <ol style="margin-left:20px">
+        <li>As an admin,
+         Go to Settings > Page Info (and scroll to the bottom). Get the "Facebook Page ID"</li>
+         <li>Or View Source and search for actor_id. (Need to confirm when this is possible.)</li>
+         <li>Or use the facebook query url in a new browser tab. Look for actor_id in the results.</li>
+        </ol>
+        <br>You may also need to add a folder name.
+    </p>
+
+    <h3>Feed Config:</h3>
+
+    <ol style="margin-left:20px">
+        <li>Set includePublicFeed and fbShowControls to false in the page script to ensure no
+            public feeds will be included.</li>
+        <li>Ensure fbInit() and fbFetch() are called and reload the page.</li>
+       
+        <li>Restore/Remove includePublicFeed and fbShowControls based on the site preferences.
+        </li>
+    </ol>
+    <br />
+    <br />
+    <hr>
+    * Plugin must be accompanied by a <a href="http://dreamstudio.com" target="dreamstudio">DreamStudio</a> link, or be hosted by an approved site.
+    <br />
+
+</body>
+<script type="text/javascript" src="js/posts.js"></script>
+<!-- <script type="text/javascript" src="js/posts-event-title-inline.js"></script>-->
+
+</html>

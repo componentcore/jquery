@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+        <link rel="shortcut icon" type="image/png" href="../facts/images/icons/GeorgiaOrgFavicon.ico" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+        <script type="application/javascript">window.jQuery || document.write(unescape('%3Cscript src="../jquery.min.js"%3E%3C/script%3E'))</script>
+
+        <!-- Duplicated in index.html -->
+        <script type="text/javascript">            
+           var itemID = 0;
+           var siteID = 5;
+        </script>
+        <script type='text/javascript' src='js/calendar-1.1.js'></script>
+
+        <link rel='stylesheet' type='text/css' href="../../core/event/fullcalendar/fullcalendar.css" />
+        <link type="text/css" href="../../core/elements/styles/ui-lightness/jquery-ui-1.8.9.custom.css" rel="stylesheet" />
+
+        <script type="text/javascript" src="../../core/elements/styles/ui-lightness/jquery-ui-1.8.9.custom.min.js"></script>
+        <script type='text/javascript' src='../../core/event/fullcalendar/fullcalendar.min.js'></script>
+        <script type='text/javascript' src='../jquery/hash/jquery.ba-hashchange.js'></script>
+
+        <!--
+        <script src="../core/elements/javascript/browserutil.js" type="text/javascript"></script>
+        <script src="../core/item/scripts/util.js" type="text/javascript"></script>
+        -->
+        <!-- Map category sample: http://map.gtalumni.org/ -->
+        
+        <!-- firebug errors - reactive these
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#resultsDiv').load('full.html', function(){
+                    //layout('');
+                    //css('css/');
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="topNavHolder">
+            <div id="topNav"><!-- #0192dd -->
+                <div style="background-color:#0192dd; color:#fff; overflow:hidden; border-bottom:1px solid #fff">
+                
+                    <div style="overflow:hidden;font-size:1.8em;display:inline-block;padding-top:6px;padding-left:6px">Calendar Widget <sup style="font-size:8pt">alpha</sup></div>
+                    
+
+                </div>
+            </div>
+        </div>
+        This page pulls in the full.html (using .load)<br>
+        
+        <div id="topLogo" style="clear:both;">
+            <div class="logoLink"></div>
+        </div>
+        <div id="resultsDiv"></div>
+    </body>
+</html>

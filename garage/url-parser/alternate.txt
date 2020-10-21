@@ -1,0 +1,123 @@
+The following can be placed in the HTML page to return param and hash.
+Split is more efficient than regex (as documented on the following page)
+Page also show how to call as JQuery, but we're not doing so inorder to have values before JQuery loads.
+
+// http://stackoverflow.com/questions/901115/get-query-string-values-in-javascript
+var param = (function (a) {
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i) {
+        var p = a[i].split('=');
+        if (p.length != 2) continue;
+        b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+})(window.location.search.substr(1).split('&'));
+
+var hash = (function (a) {
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i) {
+        var p = a[i].split('=');
+        if (p.length != 2) continue;
+        b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+})(window.location.hash.substr(1).split('&'));
+
+//alert(param["mode"]);
+//alert(hash["mode"]);
+
+//alert("empty" in param);
+// -> true
+
+----------------------
+
+Other alternatives:
+
+
+$.url.param("tid")
+URIHash.get('tid')
+
+Note how the format differs from jquery.url.js: 
+$.url().param("tid")
+$.url().fparam("tid")
+
+
+// /core/elements/javascript/jquery/jquery.url.packed.js
+
+jQuery.url = function () { var segments = {}; var parsed = {}; var options = { url: window.location, strictMode: false, key: ["source", "protocol", "authority", "userInfo", "user", "password", "host", "port", "relative", "path", "directory", "file", "query", "anchor"], q: { name: "queryKey", parser: /(?:^|&)([^&=]*)=?([^&]*)/g }, parser: { strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*):?([^:@]*))?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/, loose: /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*):?([^:@]*))?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/} }; var parseUri = function () { str = decodeURI(options.url); var m = options.parser[options.strictMode ? "strict" : "loose"].exec(str); var uri = {}; var i = 14; while (i--) { uri[options.key[i]] = m[i] || "" } uri[options.q.name] = {}; uri[options.key[12]].replace(options.q.parser, function ($0, $1, $2) { if ($1) { uri[options.q.name][$1] = $2 } }); return uri }; var key = function (key) { if (!parsed.length) { setUp() } if (key == "base") { if (parsed.port !== null && parsed.port !== "") { return parsed.protocol + "://" + parsed.host + ":" + parsed.port + "/" } else { return parsed.protocol + "://" + parsed.host + "/" } } return (parsed[key] === "") ? null : parsed[key] }; var param = function (item) { if (!parsed.length) { setUp() } return (parsed.queryKey[item] === null) ? null : parsed.queryKey[item] }; var setUp = function () { parsed = parseUri(); getSegments() }; var getSegments = function () { var p = parsed.path; segments = []; segments = parsed.path.length == 1 ? {} : (p.charAt(p.length - 1) == "/" ? p.substring(1, p.length - 1) : path = p.substring(1)).split("/") }; return { setMode: function (mode) { strictMode = mode == "strict" ? true : false; return this }, setUrl: function (newUri) { options.url = newUri === undefined ? window.location : newUri; setUp(); return this }, segment: function (pos) { if (!parsed.length) { setUp() } if (pos === undefined) { return segments.length } return (segments[pos] === "" || segments[pos] === undefined) ? null : segments[pos] }, attr: key, param: param} } ();
+
+
+
+    var URIHash =
+    {
+            /** Place URI hash into an associative array. 
+             * If the hash is invalid, the method returns undefined. */
+            dump : function()
+            {
+                    var hash = document.location.hash;
+                    var dump = new Array();
+
+                    if(hash.length == 0) return dump;
+
+                    hash = hash.substring(1).split('&');
+
+                    for(var key in hash)
+                    {
+                            var pair = hash[key].split('=');
+
+                            if(pair.length != 2 || pair[0] in dump)
+                                    return undefined;
+
+                            // escape for storage
+                            dump[unescape(pair[0])] = unescape(pair[1]);
+                    }
+
+                    return dump;
+            },
+
+            /**
+             * Takes an associative array and stores it in the URI as a hash after the # prefix, replacing any pre-
+             * existing hash.
+             */
+            load : function(array)
+            {
+                    var first = true;
+                    var hash = '';
+
+                    for(var key in array)
+                    {
+                            if(!first) hash += '&';
+                            hash += escape(key) + '=' + escape(array[key]);
+                    }
+
+                    document.location.hash = hash;
+            },
+
+            /**
+             * Get the value of a key from the hash.  If the hash does not contain the key or the hash is invalid,
+             * the function returns undefined.
+             */
+            get : function(key)
+            {
+                    return this.dump()[key];
+            },
+
+            /**
+             * Set the value of a key in the hash.  If the key does not exist, the key/value pair is added.
+             */
+            set : function(key,value)
+            {
+                    var dump = this.dump();
+                    dump[key] = value;
+
+                    var hash = new Array();
+
+                    for(var key in dump)
+                            hash.push(escape(key) + '=' + escape(dump[key]));
+
+                    document.location.hash = hash.join('&');
+            }
+    }
+

@@ -1,0 +1,424 @@
+/* Changes to Base originate at /base/css/base.css */
+
+html, body, div, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, calibri, arial, sans-serif;
+}
+li {
+  /* margin-left:20px; */ /* impacts gd footer */
+}
+label {
+  margin-right:10px;
+}
+table {
+  border-spacing:0px;
+}
+td {
+  padding:0px;
+  vertical-align: top;
+}
+body {
+  /*position: relative;*/
+  font-size: 13.5px;
+  /*line-height: 20px;*/
+  color: rgb(77, 82, 89);
+  color: rgb(119, 119, 119);
+  -webkit-font-smoothing: antialiased;
+}
+
+input {
+  padding-left:5px;
+  margin-right:2px;
+}
+input, select {
+  margin-bottom:8px;
+}
+
+/*
+input, textarea {
+Creates gap on some image buttons. Might reactivate after search page graphic button and others changed.
+*/
+textarea {
+    border:solid 1px #777;
+}
+/* input needed below for search field. Might remove others id conflicts arrise */
+input, label, button, select, textarea {
+  font-size: 13.5px;
+  font-weight: normal;
+  line-height: 20px;
+}
+a {
+  text-decoration: none;
+}
+/* conflicts with buttons */
+a:link {
+  color: #4091dd;
+}
+a:visited {
+  color: #4091dd;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 14px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    color: rgb(77, 82, 89);
+    margin:0px;
+}
+h1 {
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 24.5px;
+  line-height: 27px;
+  margin-bottom: 22px;
+}
+h3 {
+  font-size: 1.27em;
+  line-height: 1.3em;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+h4 {
+  font-size: 1.20em;
+  line-height: 26px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  color:#777;
+}
+sup {
+  line-height: 0.8em;
+  font-size: 0.6em;
+}
+@media print 
+{
+  .noprint {display: none; }
+  /*
+  body{margin-top:30px; color: #000; }
+  */
+}
+@media screen {.printonly {display: none; }}
+
+/* max-width conflicts with sites that use bootstrap */
+.containerXXX {
+  margin:0 auto; /* centers the content */
+  max-width: 900px;
+}
+.container {
+    position: relative;
+    margin: 0px auto;
+}
+.contentArea {
+    margin: 0px; padding: 0px; 
+    padding-left: 20px; padding-right: 20px;
+    line-height: 1.4em;
+}
+.nav {
+  list-style: none;
+}
+.nav>li>a {
+  padding: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.nav>li>a:hover {
+  background: #ddd;
+}
+.nav-right {
+  float:right;
+}
+.nav-right ul li {
+  float:left;
+}
+.header-navigation {
+  background-color:#eceaeb;
+  margin-bottom:0px; 
+  -webkit-box-shadow: 0 4px 4px -2px #999;
+  -moz-box-shadow: 0 4px 4px -2px #999;
+  box-shadow: 0 4px 4px -2px #999;
+  z-index:10; 
+}
+.main-content {
+  margin-top: 40px;
+  /* overflow:hidden; */  /* prevents footer from residing beside columns, but caused menu/accordion to be cut off. */
+}
+/*
+#mainColumn img {
+  width:100%;
+}
+*/
+#rightColumn img {
+  /* messed up /account page */
+  /*
+  width:100%;
+  */
+}
+#footer-navigation {
+    clear:both;
+    margin-top: 40px;
+    border-top: 1px solid #d6d6d6;
+}
+
+.smartButton {
+  cursor: pointer;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  line-height: normal;
+  /* margin: 1rem 0 1.11111rem; */
+  margin-top:1rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 6px 12px 6px 12px;
+  background-color: #4586f6;
+  border-color: #007ba1;
+  color: #fff;
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+  -webkit-appearance: none;
+  border: none;
+  font-weight: normal !important;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; 
+}
+.smartButton:link {
+  color: #fff !important;
+}
+.smartButton:visited {
+  color: #fff !important;
+}
+.smartButton:hover {
+  text-decoration: none !important;
+  background-color: #0077cc !important;
+}
+.smartButton.active {
+  background-color: #008cba !important;
+}
+
+.menuButtons a {
+  font-size: 14pt;
+  min-width: 250px;
+}
+
+.smartButton-lite {
+  color: #333 !important;
+  background-color: #fff !important;
+  border: 1px solid #333 !important;
+}
+.smartButton-lite:link {
+  color: #333 !important;
+}
+.smartButton-lite:visited {
+  color: #333 !important;
+}
+.smartButton-lite:hover {
+  color: #fff !important;
+}
+.smartButton-lite a {
+  color: #333 !important;
+}
+.smartButton-lite a:hover {
+  color: #fff !important;
+}
+
+@media (max-width:999px) {
+  .main-content {
+    margin-top: 14px;
+  }
+  .container {
+    padding-left:26px;
+    padding-right:16px;
+  }
+}
+
+@media (max-width:400px) {
+  h1, h2, h3, h4 {
+    line-height: 28px;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    margin-top: 16px;
+  }
+}
+
+.left {
+  width: 49.5%; max-width:500px;float:left;
+}
+.left .inner {
+  padding-right:30px;
+}
+.left img {
+  width:100%;
+}
+.main {
+  width:50.5%; float:left;
+  min-width:150px;
+}
+.wrapleft {
+  float: none;
+  width:100%;
+}
+.wrapleft p { /* Prevents orphans */
+  overflow:hidden;
+}
+.main img {
+  width:100%;
+}
+.right {
+  width: 49.5%; max-width:500px; float:right;
+}
+.right .inner {
+  padding-left:36px;
+}
+.right img {
+  width:96%;
+}
+.clear {
+  clear:both;
+  height:30px;
+}
+.nowrap {
+  white-space: nowrap;
+}
+@media (max-width:650px) {
+  .left {
+    width:100%;
+    max-width:100%;
+    border-right-width:0px;
+    max-widthX:350px;
+  }
+  .left .inner {
+    padding-right:0px;
+  }
+  .main {
+    width:100%;
+    max-width:100%;
+    max-widthX:350px;
+  }
+  .right {
+    float:left;
+    width:100%;
+    max-width:100%;
+    border-left-width:0px;
+    max-widthX:350px;
+  }
+  .right .inner {
+  padding-left:0px;
+  }
+}
+
+@media (max-width:800px) {
+  #mainColumn { /* phase out for .main */
+    width:100%;
+    float:left;
+  }
+  #rightColumn { /* phase out for .right */
+    width:100%;
+    max-width:100%;
+    float:left;
+  }
+}
+.hideWide { display:none; }
+@media (max-width: 800px) {
+  .hideMobile { display:none; }
+  .showMobile { display:block; }
+}
+@media (min-width: 801px) {
+  .hideMobile { display:block; }
+  .showMobile { display:none; }
+}
+
+.optionUL {
+  margin: 12px 18px 0 0;
+  padding: 0 0 8px 16px;
+  overflow: hidden;
+  width:100%;
+  float:left;
+  border-bottom:solid #cfcfcf 1px;
+}
+.optionLabel {
+  font-size:13.5pt;
+  float:left;
+  min-width:100px;
+  min-width:140px;
+  font-weight:500;
+  margin-bottom:8px;
+  cursor: pointer;
+}
+.optionFields {
+  margin-bottom:8px;
+  overflow: visible;
+}
+
+.accordionTitle {
+  cursor: pointer;
+  font-size:12pt;
+}
+
+/* Wide Display */
+
+.settingsWide .optionUL {
+  /* border:solid #ccc 1px; */
+}
+.settingsWide .optionFields {
+  overflow: auto;
+}
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+

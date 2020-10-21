@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--
+    CALLED FROM menu-widget.html, gpch, west end and other sites
+    -->
+    <style type="text/css">
+      body {
+        padding-top: 30px;
+      }
+      @media (max-width: 979px) {
+        body {
+          padding-top: 0px;
+        }
+      }
+      .navbar-inner {
+        max-width:1200px;
+        margin: 0px auto;
+      }
+
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .menupanel {
+        padding:10px;
+        margin-bottom:15px;
+      }
+      /* 1 px less than dropdown so menu remains open when rolling down. */
+      /*
+      .nav {
+        border: 5px solid #9ad;
+        height:39px; 
+      }
+      */
+      .dropdown {
+        /*background:#777;
+        height:40px;
+        */
+      }
+      .dropdown:hover > div.menupanel {
+        display: block;
+      }
+      .menupanel:hover > div.menupanel {
+        display: block;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner" >
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#"></a>
+
+          <div class="nav-collapse">
+
+            <ul id="menuNotification" style="display: none;" class="nav user-8">
+                <li class='divider-vertical'></li>
+                <li class='dropdown'>
+                    <a href='#' class='dropdown-toggle' data-toggle='dropdown'><span id='menuNotificationTopMenuText'>Requests</span> <b class='caret'></b></a>
+                    <ul class='dropdown-menu'>
+                        <li style='display: none;'><span id='menuNotificationSummary' style='white-space: nowrap; padding: 3px 20px;'></span></li>
+                        <li><a id='menuAddNotification' href='/account/write/100794'>Make Request</a></li>
+                        <li style='display: none;'><span style='white-space: nowrap; padding: 3px 20px;'></span></li>
+                        <li><a href='/requests'>View Requests</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav pull-right">
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i> 
+                  <span id="menuUserName">Account</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/account">Profile</a></li>
+                  <li class="divider"></li>
+                  <li><a style="display:none" class="user-0-only" href="/signin">Sign In</a></li>
+                  <li><a style="display:none" class="user-1" href="/signout">Sign Out</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="nav pull-right">
+              <li style="display: none;" class="dropdown user-4 group-6" id="menuEditItem">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-pencil icon-white"></i> Admin <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <!-- Need ItemID logic
+                  <li><a id="menuEditContent" class="user-6 group-6" href="/core/item/edit.aspx">Edit Page</a></li>
+                  <li style="display: none;" class="user-8"><a id="menuAddBlurb" href="/account">Add Blurb</a></li>
+                  <li style="display: none;" class="user-6 group-6"><a id="menuAddSubtopic" href="/core/item/add.aspx">Add Subtopic</a></li>
+                  <li class="divider"></li>
+                  -->
+                  <li style="display: none;" class="user-4"><a id="menuAdmin" href="/admin">Site Admin</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/core/elements/javascript/BrowserUtil.js"></script>
+    <script type="text/javascript" src="/core/item/scripts/util.js"></script>
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+            var userObj = new userInfo();
+            userObj.done(function (userState) {
+                if (userState.userAccess >= 1) {
+                    $('#menuUserName').html(userState.firstName);
+                    if (userState.userAccess > 4) {
+                        //$('#menuAdmin').closest('li').show();
+                    }
+                    if (userState.itemAccess >= 4) {
+                        $('#menuEditItem').closest('li').show();
+                    }
+                    if (userState.userAccess >= 8) {
+                        if ($('.edit').length > 0) {
+                            $('#menuAddBlurb').closest('li').show();
+
+                            $('#menuAddBlurb').click(function (event) {
+                                $('.edit').toggle();
+                                event.preventDefault();
+                            })
+                        }
+                    }
+                    if (userState.notification != '') {
+                        if (typeof (console) != "undefined" && typeof (console.debug) != "undefined") {
+                            console.debug('userState.notification: ' + userState.notification);
+                        }
+                        if ($('#notificationSummaryDiv').length == 0) {
+                            $('<div style="background-color: #ddd;" id="notificationSummaryDiv"></div>').insertAfter('#topMenuDiv').append(userState.notification);
+                        }
+                    }
+                }
+
+                loadUserAccess(userState); // util.js
+            });
+
+            var queryStringParams = $.extend({}, BrowserUtil.queryStringParams); // make a copy of the querystring collection
+
+            if (typeof (itemID) != "undefined" && typeof (siteID) != "undefined") {
+                if (itemID > 0) {
+                    $('#menuEditContent').attr('href', function (index, currentValue) {
+                        queryStringParams.s = itemID.toString() + '.0.0.' + siteID.toString();
+                        $(this).attr('href', currentValue + '?' + $.param(queryStringParams));
+                    })
+                    .closest('li').show();
+                    $('#menuAddSubtopic').attr('href', function (index, currentValue) {
+                        queryStringParams.s = '0.0.0.' + siteID.toString();
+                        queryStringParams.p = itemID;
+                        $(this).attr('href', currentValue + '?' + $.param(queryStringParams));
+                    })
+                    .closest('li').show();
+                }
+            }
+        });
+    </script>   
+</body></html>

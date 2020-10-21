@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>String Reverser Control Panel</title>
+
+    <!-- WinJS references -->
+    
+    <link href="winjs/css/ui-dark.css" rel="stylesheet" />
+    <script src="winjs/js/base.js"></script>
+    <script src="winjs/js/ui.js"></script>
+
+    <!--
+    WinJS files above from Navigation app:
+    http://ajlopez.wordpress.com/2011/10/28/metro-applications-1-my-first-blank-application/
+    -->
+
+    <!-- StringReverserControlPanel references -->
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/default.js"></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
+
+    <script type="text/javascript">
+        // Limit to when running locally on Windows
+        //function alert(theMessage) {
+        //    Windows.UI.Popups.MessageDialog(theMessage).showAsync().then();
+        //}
+        $(document).ready(function () {
+
+            // http://stackoverflow.com/questions/3136140/cors-not-working-on-chrome
+            //xhr.setRequestHeader('Content-Type', 'text/plain');
+
+            // http://social.msdn.microsoft.com/Forums/en-US/winappswithhtml5/thread/66273417-92cd-4a35-b9a1-281d962eff59
+            jQuery.support.cors = true;
+
+            $.getJSON('http://search.twitter.com/search.json?q=windows8', function (data) {
+                //console.log(data.results[0].text);
+                //alert(data.results[0].text);
+                alert('Uncommet line above if you see this.');
+            });
+            
+            $("#btnReverse").click(function () {
+                alert('You clicked on #btnReverse. The browser version is not functional yet. Please lend a hand.');
+                var serviceURL = "http://stringreverser.azurewebsites.net/api/reverser/";
+                serviceURL = serviceURL + $("#sourceString").val();
+                WinJS.xhr({ url: serviceURL, responseType: "json" })
+                     .done(function complete(result) {
+                         $("#resultString").html($("#sourceString").val() +
+                         "<br />becomes<br />" +
+                         result.responseText.substring(1, result.responseText.length - 1));
+                     });
+                alert('Leaving #btnReverse');
+            });
+            
+        });
+    </script>
+
+    <style type="text/css" >
+        body {
+            margin: 20px;
+        }
+        
+        @font-face {
+            font-family: 'CabinSketchRegular';
+            src: url('/fonts/CabinSketch-Regular-webfont.eot');
+            src: url('CabinSketch-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/CabinSketch-Regular-webfont.woff') format('woff'), url('/fonts/CabinSketch-Regular-webfont.ttf') format('truetype'), url('/fonts/CabinSketch-Regular-webfont.svg#CabinSketchRegular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'CabinSketchBold';
+            src: url('/fonts/CabinSketch-Bold-webfont.eot');
+            src: url('/fonts/CabinSketch-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/CabinSketch-Bold-webfont.woff') format('woff'), url('/fonts/CabinSketch-Bold-webfont.ttf') format('truetype'), url('/fonts/CabinSketch-Bold-webfont.svg#CabinSketchBold') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #resultString {
+         font-family: "CabinSketchBold", Arial, sans-serif;   
+         font-size: 86px;
+         width: 100%;
+         text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>String Reverser Control Panel</h1>
+    <label>String to be reversed: </label>
+    <input id="sourceString" type="text" value="default" />
+    <button id="btnReverse" type="button">Reverse</button>
+    <div id="resultString"></div><br />
+
+    <p><strong>What's this?</strong> 
+    <a href="http://www.brianhprince.com/2012/06/29/consuming-that-rest-webapi-from-windows-8-html5/">Consuming a REST WebAPI from Windows 8 HTML5</a><br />
+    <strong>More details:</strong> 
+    <a href="https://github.com/brianhprince/StringReverserControlPanel/issues/1">View related post on GitHub</a></p>
+
+    <p><strong>To do:</strong> Get jQuery.support.cors working based on this <a href="http://social.msdn.microsoft.com/Forums/en-US/winappswithhtml5/thread/66273417-92cd-4a35-b9a1-281d962eff59">cross-domain request sample</a>.</p>
+    <br />
+    <hr /><br />
+    <p><pre>How to do an alert within Window8 Metro App:
+            
+        function alert(theMessage) {
+            Windows.UI.Popups.MessageDialog(theMessage).showAsync().then();
+        }
+
+        </pre></p>
+</body>
+</html>

@@ -1,0 +1,94 @@
+.newsImage {
+    float:left; padding-right:15px;
+}
+.newsText {
+    /* overflow:hidden; */
+    font-size:10pt;
+    font-family: calibri, helvetica, arial, sans-serif;
+    line-height: 16pt;
+}
+.newsfeedTitle {
+    margin-bottom:5px;
+}
+.newsfeedTitle a {
+    font-size:12pt;
+    text-decoration: none; line-height:16pt;
+    font-family: calibri, helvetica, arial, sans-serif;
+}
+.newsfeedTitle a:hover {
+    text-decoration: underline;
+}
+.newsfeed{ text-align:left; float:left; margin-right:4px; }
+.newsfeed ul{list-style:none;padding:0;margin:0;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+}
+.newsfeed ul li {
+    list-style: none;
+    padding: 8px 10px 2px 10px;
+    margin: 0px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-left: 4px solid #fff;
+    border-bottom: 1px solid #E9E9E9;
+}
+.newsfeed ul li: hover{ background-color:#f4f4f4; }
+.newsfeed ul li:first-child{ border-top: 1px solid #E9E9E9; }
+.newsfeed ul li:last-child{ margin-bottom:1px;}
+.newsfeed ul li:hover {
+    background:#f3f3f3;
+    cursor: pointer;
+}
+
+.postDate{color: #aaa; margin-bottom: 6px; font-size: 11px;}
+.commentDate{color: #aaa; margin-bottom: 6px; font-size: 11px;margin-top:2px;}
+
+.newsfeedDesc {
+    margin-top: 5px;
+    margin-bottom: 4px; 
+
+    color: #aaa;
+    font-size: 11px;
+
+    /*
+    border-top: 1px dashed #ccc;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 8pt; line-heingt:10pt;
+    color: #999;
+    */
+}
+.comments {
+    margin-bottom:10px;
+}
+.comment {
+    position: relative;
+    overflow: hidden;
+    background-color: #f7f7f7; 
+    border-bottom: 1px solid #E5EAF1;
+    margin: 2px 0 0 0; 
+    padding: 6px;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    line-height:1.55;
+}
+.commentImage{float:left; margin-right:8px; height:32px}
+.addComment{ 
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 11px;
+    padding-left:20px;
+    background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yK/x/H6HUgsh0LxS.png);
+    background-origin: padding-box;
+    background-position: 0px -18px;
+    background-repeat: no-repeat;
+    background-size: 18px 89px;
+    text-decoration: none;
+}
+.addComment:hover{ text-decoration:underline}
+.commentDate {color:#aaa; line-height:2;}
+
+.commentIcon {
+    
+}
+@media (max-width: 400px) { /* Narrowist width in Chrome */
+    .newsText {
+        overflow: visible;
+    }
+}
