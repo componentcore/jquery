@@ -2989,6 +2989,7 @@ input[type="submit"].btn.btn-mini {
   border-radius: 6px;
 }
 .nav .dropdown-toggle .caret {
+  /* CUSTOM */
   margin-top: 6px;
 }
 .nav .dropdown-toggle:hover .caret {
