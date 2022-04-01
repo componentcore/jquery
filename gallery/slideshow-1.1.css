@@ -41,8 +41,8 @@
 .slide-next { position: absolute; top:0; width:100%; height:100%; display:none;}
 .slide-title { font-size: 24px; line-height: 1.1em; margin-bottom: 18px; }
 
-.slide-nav-button { cursor:pointer; border: 1px solid #ddd; text-decoration: none; color: #fff; padding-right:10px; padding-left:10px; margin-bottom:15px; background: url('/core/elements/dots/black50.png') }
-.slide-nav-button:hover { color: #777; background: url('/core/elements/dots/white30.png'); }
+.slide-nav-button { cursor:pointer; border: 1px solid #ddd; text-decoration: none; color: #fff; padding-right:10px; padding-left:10px; margin-bottom:15px; background: url('/core/img/dots/black50.png') }
+.slide-nav-button:hover { color: #777; background: url('/core/img/dots/white30.png'); }
 
 .clearfix {display:block;}
 .clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }

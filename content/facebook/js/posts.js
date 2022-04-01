@@ -121,10 +121,10 @@ function fbFetch() {
             html += "<li class='linked fbRow fbRowCollapsed fbRowHover'" + (!includePublicFeed && fbAdminID != '' && fb.from.id != fbAdminID  ? "style='display: none;'" : "") + ">";
 
             // No longer effect when clicking
-            html += "<div class='fbClose fbExpanded' style='float:right'><img style='width:15px;height:8px; margin-left:3px; opacity: 0.5; filter: alpha(opacity=50);' src='/core/elements/arrows/olive-down.gif' alt='less' /></div>";
+            html += "<div class='fbClose fbExpanded' style='float:right'><img style='width:15px;height:8px; margin-left:3px; opacity: 0.5; filter: alpha(opacity=50);' src='/core/img/arrows/olive-down.gif' alt='less' /></div>";
 
             // No longer effect when clicking
-            html += "<div class='fbOpen fbCondensed' style='float:right'><img style='width:10px;height:10px' src='/core/elements/arrows/next-sm.gif' alt='more' /></div>";
+            html += "<div class='fbOpen fbCondensed' style='float:right'><img style='width:10px;height:10px' src='/core/img/arrows/next-sm.gif' alt='more' /></div>";
             
             if (fb.link) {
 

@@ -154,7 +154,7 @@ function loadGallery() {
 	    $('#slide-numbers').html('');
 	    slideCount = 0;
 
-	    var navNumber = '<div onclick="previousSlide();return;"><img src="/core/elements/arrows/black-back-sm.gif" /></div>';
+	    var navNumber = '<div onclick="previousSlide();return;"><img src="/core/img/arrows/black-back-sm.gif" /></div>';
 	    if (numberArrows && galleryDataModified.length > 1) {
 	        $(navNumber).appendTo('#slide-numbers');
 	    }
@@ -188,13 +188,13 @@ function loadGallery() {
 	        $("#pauseResume").show();
 	    }
 	    if (numberArrows) {
-	        navNumber = '<div onclick="nextSlide();"><img src="/core/elements/arrows/black-next-sm.gif" /></div>';
+	        navNumber = '<div onclick="nextSlide();"><img src="/core/img/arrows/black-next-sm.gif" /></div>';
 	        $(navNumber).appendTo('#slide-numbers');
 	    }
 	    if (showPlayPause) {
-	        //var playPauseButton = '<div id="resume" class="textbutton playPauseButtons" style="display:none;height:20px;position:relative;"><img src="/core/elements/icons/play160.jpg" width="16" alt="resume" style="position:absolute" /> &nbsp; &nbsp; &nbsp; &nbsp;start rotation</div><div id="pause" class="textbutton playPauseButtons" style="display:block;height:20px;padding-bottom:1px"><img style="position:absolute" src="/core/elements/icons/pause160.jpg" width="16" alt="pause" /> <span style="float:left;padding-bottom:3px">&nbsp; &nbsp; &nbsp; &nbsp;pause rotation</span></div>';
+	        //var playPauseButton = '<div id="resume" class="textbutton playPauseButtons" style="display:none;height:20px;position:relative;"><img src="/core/img/icons/play160.jpg" width="16" alt="resume" style="position:absolute" /> &nbsp; &nbsp; &nbsp; &nbsp;start rotation</div><div id="pause" class="textbutton playPauseButtons" style="display:block;height:20px;padding-bottom:1px"><img style="position:absolute" src="/core/img/icons/pause160.jpg" width="16" alt="pause" /> <span style="float:left;padding-bottom:3px">&nbsp; &nbsp; &nbsp; &nbsp;pause rotation</span></div>';
 	        //$(playPauseButton).appendTo('#playPause');
-	        // /core/elements/icons/pause22.jpg play22.jpg
+	        // /core/img/icons/pause22.jpg play22.jpg
 	        var playPause = '<div id="resume" style="display:none;position:relative;">&nbsp;</div><div id="pause">&nbsp;</div>';
             if(initiallyPaused) {
                 playPause = '<div id="resume">&nbsp;</div><div id="pause" style="display:none;position:relative;">&nbsp;</div>';
@@ -310,14 +310,14 @@ function goSlide(number) {
         }
     }
 
-    //$('.featureMenu li').css('background', 'url(\'/core/elements/dots/333-60.png\')');
+    //$('.featureMenu li').css('background', 'url(\'/core/img/dots/333-60.png\')');
     //$('.featureMenu a').removeClass('active');
 
     // Bug - this prevents area from dropping hover color
-    //$('#featureNav' + number + ':hover').css('background', 'url(\'/core/elements/dots/333-60.png\')'); // Cover blue
+    //$('#featureNav' + number + ':hover').css('background', 'url(\'/core/img/dots/333-60.png\')'); // Cover blue
 
     // Bug - This prevents making previous ones inactive
-    //$('#featureNav' + number).css('background', 'url(\'/core/elements/dots/333-60.png\')'); // Cover blue hover
+    //$('#featureNav' + number).css('background', 'url(\'/core/img/dots/333-60.png\')'); // Cover blue hover
     
     // Didn't work (on LI)
     //$('#featureNav' + number).addClass('active'); // Bug this is too dark.  But can't do two actions on li or a.
@@ -425,14 +425,14 @@ function loadNext(index) {
     if (ua >= 6) {
         if (galleryDataModified[index].id > 0) {
             // s=' + galleryDataModified[index].id + '&
-            slideContainer += '<a href="/net/content/upload.aspx?imageid=' + galleryDataModified[index].id + '&parentid=' + galleryid + '"><img src="/core/elements/arrows/dot-pointer-on-white.gif" alt="" /> Edit Image</a><br />';
-            slideContainer += '<a href="/net/content/categoryedit.aspx?itemid=' + galleryDataModified[index].id + '"><img src="/core/elements/arrows/dot-pointer-on-white.gif" alt="" /> Edit Categories</a><br />';
+            slideContainer += '<a href="/net/content/upload.aspx?imageid=' + galleryDataModified[index].id + '&parentid=' + galleryid + '"><img src="/core/img/arrows/dot-pointer-on-white.gif" alt="" /> Edit Image</a><br />';
+            slideContainer += '<a href="/net/content/categoryedit.aspx?itemid=' + galleryDataModified[index].id + '"><img src="/core/img/arrows/dot-pointer-on-white.gif" alt="" /> Edit Categories</a><br />';
             // To do: Parse the s value
             // &s=' + $.url.param("s") + '
-            slideContainer += '<a href="/net/content/upload.aspx?popup=0&siteid=' + $.url.param("siteid") + '&parentid=' + galleryid + '"><img src="/core/elements/arrows/dot-pointer-on-white.gif" alt="" /> Add Image</a><br />';
+            slideContainer += '<a href="/net/content/upload.aspx?popup=0&siteid=' + $.url.param("siteid") + '&parentid=' + galleryid + '"><img src="/core/img/arrows/dot-pointer-on-white.gif" alt="" /> Add Image</a><br />';
         }
         if (galleryDataModified[index].typeID != 98000 && galleryDataModified[index].typeID != $.url.param("tid")) {
-            slideContainer += '<a href="<%=SetLink("/location/gallery/imagegallery.aspx?1=2")%>&tid=' + galleryDataModified[index].typeID + '"><img src="/core/elements/arrows/dot-pointer-on-white.gif" alt="" /> ' + galleryDataModified[index].typeTitlePlural + ' at all Parks</a><br />';
+            slideContainer += '<a href="<%=SetLink("/location/gallery/imagegallery.aspx?1=2")%>&tid=' + galleryDataModified[index].typeID + '"><img src="/core/img/arrows/dot-pointer-on-white.gif" alt="" /> ' + galleryDataModified[index].typeTitlePlural + ' at all Parks</a><br />';
         }
     }
     slideContainer += '</div>';
